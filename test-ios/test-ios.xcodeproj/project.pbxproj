@@ -19,6 +19,10 @@
 		77750BCA19099CC80097BB1D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77750BB219099CC80097BB1D /* UIKit.framework */; };
 		77750BD219099CC90097BB1D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 77750BD019099CC90097BB1D /* InfoPlist.strings */; };
 		77750BD419099CC90097BB1D /* test_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77750BD319099CC90097BB1D /* test_iosTests.m */; };
+		77750BE01909A2560097BB1D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77750BDE1909A2560097BB1D /* MainViewController.m */; };
+		77750BE11909A2560097BB1D /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77750BDF1909A2560097BB1D /* MainViewController.xib */; };
+		77750BE71909A8E00097BB1D /* AdditivesListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77750BE51909A8E00097BB1D /* AdditivesListTableViewController.m */; };
+		77750BE81909A8E00097BB1D /* AdditivesListTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77750BE61909A8E00097BB1D /* AdditivesListTableViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,13 @@
 		77750BCF19099CC90097BB1D /* test-iosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "test-iosTests-Info.plist"; sourceTree = "<group>"; };
 		77750BD119099CC90097BB1D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		77750BD319099CC90097BB1D /* test_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = test_iosTests.m; sourceTree = "<group>"; };
+		77750BDD1909A2560097BB1D /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		77750BDE1909A2560097BB1D /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		77750BDF1909A2560097BB1D /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		77750BE31909A7860097BB1D /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		77750BE41909A8E00097BB1D /* AdditivesListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdditivesListTableViewController.h; sourceTree = "<group>"; };
+		77750BE51909A8E00097BB1D /* AdditivesListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdditivesListTableViewController.m; sourceTree = "<group>"; };
+		77750BE61909A8E00097BB1D /* AdditivesListTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdditivesListTableViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +118,7 @@
 		77750BB419099CC80097BB1D /* test-ios */ = {
 			isa = PBXGroup;
 			children = (
+				77750BE21909A25F0097BB1D /* Controller */,
 				77750BBD19099CC80097BB1D /* AppDelegate.h */,
 				77750BBE19099CC80097BB1D /* AppDelegate.m */,
 				77750BC019099CC80097BB1D /* Images.xcassets */,
@@ -122,6 +134,7 @@
 				77750BB719099CC80097BB1D /* InfoPlist.strings */,
 				77750BBA19099CC80097BB1D /* main.m */,
 				77750BBC19099CC80097BB1D /* test-ios-Prefix.pch */,
+				77750BE31909A7860097BB1D /* Constants.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -142,6 +155,19 @@
 				77750BD019099CC90097BB1D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		77750BE21909A25F0097BB1D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				77750BDD1909A2560097BB1D /* MainViewController.h */,
+				77750BDE1909A2560097BB1D /* MainViewController.m */,
+				77750BDF1909A2560097BB1D /* MainViewController.xib */,
+				77750BE41909A8E00097BB1D /* AdditivesListTableViewController.h */,
+				77750BE51909A8E00097BB1D /* AdditivesListTableViewController.m */,
+				77750BE61909A8E00097BB1D /* AdditivesListTableViewController.xib */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +246,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				77750BB919099CC80097BB1D /* InfoPlist.strings in Resources */,
+				77750BE81909A8E00097BB1D /* AdditivesListTableViewController.xib in Resources */,
+				77750BE11909A2560097BB1D /* MainViewController.xib in Resources */,
 				77750BC119099CC80097BB1D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,6 +268,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				77750BBF19099CC80097BB1D /* AppDelegate.m in Sources */,
+				77750BE71909A8E00097BB1D /* AdditivesListTableViewController.m in Sources */,
+				77750BE01909A2560097BB1D /* MainViewController.m in Sources */,
 				77750BBB19099CC80097BB1D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
